@@ -1,0 +1,150 @@
+/*********************
+Variables
+*********************/
+/*********************
+General
+*********************/
+html {
+  position: relative;
+  min-height: 100%; }
+
+body {
+  padding: 0;
+  margin: 0;
+  font-family: Helvetica, Helvetica Neue, Arial;
+  font-size: 16px; }
+
+.button-info {
+  background-color: #5bc0de;
+  color: #fff;
+  border-color: #46b8da;
+  padding: 6px 12px;
+  border-radius: 2px;
+  font-size: 18px; }
+
+.button-info:hover {
+  background-color: #46b8da; }
+
+a {
+  text-decoration: none; }
+
+/*********************
+Header
+*********************/
+header {
+  background-color: #89D293;
+  height: 60px; }
+
+header {
+  color: #fff; }
+  header .logo {
+    float: left;
+    padding: 20px;
+    font-weight: bold;
+    font-size: 26px; }
+  header nav {
+    float: right;
+    padding: 20px; }
+    header nav a {
+      color: #fff; }
+
+/*********************
+Contents
+*********************/
+#contents h1 {
+  text-align: center;
+  color: #545254; }
+#contents hr {
+  width: 85%;
+  height: 1px;
+  color: #949194;
+  background: #949194;
+  font-size: 0;
+  border: 0; }
+#contents #photos-container {
+  width: 85%;
+  margin: 0 auto;
+  padding-top: 25px;
+  /*********************
+  Media Queries
+  *********************/ }
+  #contents #photos-container .photo-box {
+    padding-bottom: 100px;
+    width: 100%;
+    float: left;
+    padding-bottom: 20px; }
+    #contents #photos-container .photo-box .row {
+      width: 100%; }
+      #contents #photos-container .photo-box .row img {
+        width: 95%;
+        height: auto;
+        overflow: none; }
+      #contents #photos-container .photo-box .row p {
+        width: 95%; }
+    #contents #photos-container .photo-box .image-row {
+      text-align: center; }
+  @media only screen and (min-width: 480px) {
+    #contents #photos-container .photo-box {
+      width: 50%;
+      float: left;
+      padding-bottom: 20px; }
+      #contents #photos-container .photo-box .row {
+        width: 100%; }
+        #contents #photos-container .photo-box .row img {
+          width: 95%;
+          height: auto;
+          overflow: none; }
+        #contents #photos-container .photo-box .row p {
+          width: 95%; } }
+  @media only screen and (min-width: 768px), only screen and (min-width: 760px) and (orientation: landscape) {
+    #contents #photos-container .photo-box {
+      width: 33%;
+      float: left;
+      padding-bottom: 20px; }
+      #contents #photos-container .photo-box .row {
+        width: 100%; }
+        #contents #photos-container .photo-box .row img {
+          width: 95%;
+          height: auto;
+          overflow: none; }
+        #contents #photos-container .photo-box .row p {
+          width: 95%; } }
+  @media only screen and (min-width: 1140px) {
+    #contents #photos-container .photo-box {
+      width: 20%;
+      float: left;
+      padding-bottom: 20px; }
+      #contents #photos-container .photo-box .row {
+        width: 100%; }
+        #contents #photos-container .photo-box .row img {
+          width: 95%;
+          height: auto;
+          overflow: none; }
+        #contents #photos-container .photo-box .row p {
+          width: 95%; } }
+
+/*********************
+Footer
+*********************/
+footer {
+  background-color: #89D293;
+  height: 50px;
+  bottom: 0;
+  left: 0;
+  width: 100%;
+  position: fixed;
+  color: #fff; }
+  footer div {
+    width: 100%;
+    text-align: center;
+    padding: 10px; }
+
+/*********************
+Clearfix
+*********************/
+.clearfix:before,
+.clearfix:after {
+  content: " ";
+  display: table; }
+
+/*# sourceMappingURL=style.css.map */

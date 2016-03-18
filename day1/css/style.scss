@@ -1,0 +1,195 @@
+/*********************
+Variables
+*********************/
+
+$header-color: #89D293;
+$header-text-color: #fff;
+$h1-color: #545254;
+$hr-color: #949194;
+$a-bgcolor: #5bc0de;
+
+/*********************
+General
+*********************/
+html {
+	position: relative;
+	min-height: 100%;
+}
+body {
+	padding: 0;
+	margin: 0;
+	font-family: Helvetica, Helvetica Neue, Arial;
+	font-size: 16px;
+}
+
+.button-info {
+	background-color: $a-bgcolor;
+	color: #fff;
+	border-color: #46b8da;
+	padding: 6px 12px;
+	border-radius: 2px;
+	font-size: 18px;
+}
+
+.button-info:hover {
+	background-color: #46b8da;
+}
+
+a {
+	text-decoration: none;
+}
+
+/*********************
+Header
+*********************/
+header {
+	background-color: $header-color;
+	height: 60px;
+}
+
+header {
+	color: $header-text-color;
+	.logo {
+		float: left;
+		padding: 20px;
+		font-weight: bold;
+		font-size: 26px;
+	}
+	nav {
+		float: right;
+		padding: 20px;
+		a {
+			color: $header-text-color;
+		}
+	}
+}
+
+/*********************
+Contents
+*********************/
+#contents {
+	h1 {
+		text-align: center;
+		color: $h1-color;
+	}
+	hr {
+		width: 85%;
+		height: 1px;
+	    color: $hr-color;
+	    background: $hr-color;
+	    font-size: 0;
+	    border: 0;
+	}
+	#photos-container {
+		width: 85%;
+		margin: 0 auto;
+		padding-top: 25px;
+		.photo-box {
+			padding-bottom: 100px;
+			width: 100%;
+			float: left;
+			padding-bottom: 20px;
+			.row {
+				width: 100%;
+				img {
+					width: 95%;
+					height: auto;
+					overflow: none;
+				}
+				p {
+					width: 95%;
+				}
+			}
+			.image-row {
+				text-align: center;
+			}
+		}
+
+		/*********************
+		Media Queries
+		*********************/
+
+		@media only screen and (min-width: 480px){
+			.photo-box {
+				width: 50%;
+				float: left;
+				padding-bottom: 20px;
+				.row {
+					width: 100%;
+					img {
+						width: 95%;
+						height: auto;
+						overflow: none;
+					}
+					p {
+						width: 95%;
+					}
+				}
+			}
+		}
+		@media only screen and (min-width: 768px),
+			   only screen and (min-width: 760px) and (orientation: landscape) {
+			.photo-box {
+				width: 33%;
+				float: left;
+				padding-bottom: 20px;
+				.row {
+					width: 100%;
+					img {
+						width: 95%;
+						height: auto;
+						overflow: none;
+					}
+					p {
+						width: 95%;
+					}
+				}
+			}
+		}
+		@media only screen and (min-width: 1140px){
+			.photo-box {
+				width: 20%;
+				float: left;
+				padding-bottom: 20px;
+				.row {
+					width: 100%;
+					img {
+						width: 95%;
+						height: auto;
+						overflow: none;
+					}
+					p {
+						width: 95%;
+					}
+				}
+			}
+		}
+	}
+}
+
+/*********************
+Footer
+*********************/
+footer {
+	background-color: $header-color;
+	height: 50px;
+	bottom: 0;
+	left: 0;
+	width: 100%;
+	position: fixed;
+	color: $header-text-color;
+	div {
+		width: 100%;
+		text-align: center;
+		padding: 10px;
+	}
+}
+
+/*********************
+Clearfix
+*********************/
+.clearfix:before,
+.clearfix:after {
+	content: " ";
+	display: table;
+}
